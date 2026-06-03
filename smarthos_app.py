@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import numpy as np 
+import numpy as np
 import pickle
 import os
 
@@ -33,6 +33,7 @@ div[data-testid="stCheckbox"] label {
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 @st.cache_resource
 def load_model():
