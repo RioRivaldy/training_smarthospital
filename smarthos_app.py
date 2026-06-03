@@ -119,16 +119,16 @@ with st.form("triage_form"):
     </div>
     """, unsafe_allow_html=True)
 
-    c1, c2, c3, c4 = st.columns(4)
-    with c1:
+    _, c2, c3, c4, _ = st.columns(5)
+    with c2:
         fever            = st.checkbox("🌡️  Fever")
         cough            = st.checkbox("🤧  Cough")
         skin_rash        = st.checkbox("🔴  Skin Rash")
-    with c2:
+    with c3:
         headache         = st.checkbox("🤕  Headache")
         chest_pain       = st.checkbox("💔  Chest Pain")
         stomach_pain     = st.checkbox("🤢  Stomach Pain")
-    with c3:
+    with c4:
         shortness_breath = st.checkbox("😮‍💨  Shortness of Breath")
         nausea_vomiting  = st.checkbox("🤮  Nausea / Vomiting")
         dizziness        = st.checkbox("😵  Dizziness")
